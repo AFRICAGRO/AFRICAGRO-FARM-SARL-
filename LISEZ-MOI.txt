@@ -1,0 +1,16 @@
+NEXUS IA — installation
+
+PC (Windows) : double-clic sur index.html (Chrome/Edge). Réglages > colle tes clés API.
+Téléphone : héberger le dossier en HTTPS (gratuit) :
+ 1. GitHub > nouveau dépôt public "nexus-ia" > envoie les 6 fichiers.
+ 2. Settings > Pages > Branch: main > Save.
+ 3. Ouvre l'adresse https://TON-COMPTE.github.io/nexus-ia/ sur le téléphone,
+    menu du navigateur > "Ajouter à l'écran d'accueil" / "Installer l'application".
+Clés API : console.anthropic.com, platform.openai.com, aistudio.google.com, platform.deepseek.com
+
+MODÈLES OUVERTS / SANS ABONNEMENT
+- OpenRouter (openrouter.ai) : une seule clé, 300+ modèles (DeepSeek R1, Llama, Qwen, Mistral...), paiement à l'usage.
+- Ollama sur ton PC (ollama.com) : gratuit et illimité, mais limité par ta machine.
+  Lance : ollama pull llama3.1  puis, sous Windows (PowerShell) :
+  setx OLLAMA_ORIGINS "*"   (redémarre Ollama)
+  Dans Réglages > Mon serveur : http://localhost:11434/v1/chat/completions
